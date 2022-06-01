@@ -107,3 +107,11 @@ section#nosotros {
   text-align: center;
   font-size: 1rem;
 }
+
+.cambioTexto {
+  height: 200px;
+  width: 250px;
+  background-color: brown;
+  color: white;
+  border: none;
+}
