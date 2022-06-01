@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: crimson;
+  height: 70px;
+  padding: 0 10px;
+}
+
+header .container-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .container-logo img {
+  width: 50px;
+  height: auto;
+}
+
+header .container-logo h1 {
+  font-size: 24px;
+}
+
+#toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+header .navegation {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 20%;
+}
+
+header .navegation nav {
+  width: 200px;
+  background-color: crimson;
+  position: absolute;
+  right: -212px;
+  bottom: -197px;
+  transition: right 700ms ease-in-out;
+}
+
+header .navegation nav ul {
+  list-style: none;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .navegation nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navegation nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu-active .navegation nav {
+  display: block;
+  right: -10px;
+}
+
+section#nosotros {
+  background-color: burlywood;
+  color: black;
+  min-height: 90vh;
+  text-align: center;
+  font-size: 1rem;
+}
